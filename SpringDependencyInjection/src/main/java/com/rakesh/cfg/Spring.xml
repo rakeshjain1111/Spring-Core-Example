@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="output" class="com.rakesh.bean.OutputHelper">
+    		<property name="outputGenerator" ref="CsvOutputGenerator"></property>
+    </bean>
+    
+    <bean id="CsvOutputGenerator" class="com.rakesh.bean.CsvOutputGenerator"></bean>
+    <bean id="JsonOutputGenerator" class="com.rakesh.bean.JsonOutputGenerator"></bean>
+
+</beans>	

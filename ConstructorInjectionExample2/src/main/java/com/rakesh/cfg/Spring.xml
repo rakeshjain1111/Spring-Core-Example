@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu" class="com.rakesh.model.Student">
+		<constructor-arg>
+			<value>101</value>
+		</constructor-arg>     
+		<constructor-arg>
+			<value>Rakesh</value>
+		</constructor-arg>     
+		<constructor-arg ref="ad"></constructor-arg>     
+    </bean>
+    
+    <bean id="ad" class="com.rakesh.model.Address">
+		<constructor-arg>
+			<value>Kharadi Bypass</value>
+		</constructor-arg>     
+		<constructor-arg>
+			<value>Pune</value>
+		</constructor-arg>     
+		<constructor-arg>
+			<value>MH</value>
+		</constructor-arg>     
+    </bean>
+
+</beans>	
