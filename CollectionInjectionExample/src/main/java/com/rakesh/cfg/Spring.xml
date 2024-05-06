@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu" class="com.rakesh.model.Student">
+		<property name="name" value="Rakesh"/>
+		<property name="phones">
+		  <list>
+		     <value>999999999</value>
+		     <value>888888888</value>
+		     <value>777777777</value>
+		  </list>
+		</property>
+		<property name="addresses">
+		  <set>
+		     <value>Sagar</value>
+		     <value>Bhopal</value>
+		     <value>Pune</value>
+		  </set>
+		</property>
+		<property name="courses">
+		    <map>
+		     <entry key="java" value="6 month"/>
+		     <entry key="c" value="2 month"/>
+		     <entry key="python" value="3 month"/>
+		    </map>
+		</property>
+    </bean>
+    
+    
+
+</beans>	

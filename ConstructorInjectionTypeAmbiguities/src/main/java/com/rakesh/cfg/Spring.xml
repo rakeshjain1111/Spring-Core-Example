@@ -4,15 +4,9 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="stu" class="com.rakesh.model.Student">
-		<constructor-arg>
-			<value>101</value>
-		</constructor-arg>     
-		<constructor-arg>
-			<value>Rakesh</value>
-		</constructor-arg>     
-		<constructor-arg>
-			<value>Pune</value>
-		</constructor-arg>     
+		<constructor-arg type="java.lang.String" value="101"/>  
+		<constructor-arg type="java.lang.String" value="Rakesh"/>
+		<constructor-arg type="java.lang.String" value="255"/>
+		<constructor-arg type="java.lang.Integer" value="25"/>
     </bean>
-
 </beans>	

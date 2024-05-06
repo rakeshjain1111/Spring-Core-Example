@@ -1,0 +1,10 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="s" class="com.rakesh.model.Samosa" init-method="init" destroy-method="destory">
+		<property name="price" value="10"/>
+    </bean>
+
+</beans>	
