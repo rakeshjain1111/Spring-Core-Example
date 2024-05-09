@@ -6,5 +6,9 @@
     <bean id="s" class="com.rakesh.model.Samosa" init-method="init" destroy-method="destory">
 		<property name="price" value="10"/>
     </bean>
+    
+     <bean id="j" class="com.rakesh.model.Jalebi">
+		<property name="price" value="15"/>
+    </bean>
 
 </beans>	

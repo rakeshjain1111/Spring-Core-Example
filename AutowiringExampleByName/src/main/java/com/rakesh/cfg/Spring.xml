@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="s" class="com.rakesh.model.Student" autowire="byName">
+		<property name="id">
+		   <value>101</value>
+		</property>    		
+		
+		<property name="name">
+		   <value>Rakesh</value>
+		</property> 
+		    
+    </bean>
+    
+    <bean name="add" class="com.rakesh.model.Address" >
+       <property name="street">
+          <value>Kharadi Bypass Road</value>
+       </property>
+       <property name="city">
+      	 <value>Pune</value>
+       </property>
+       <property name="state">
+       	<value>MH</value>
+       </property>
+    </bean>
+
+</beans>	
