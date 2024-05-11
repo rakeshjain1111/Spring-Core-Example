@@ -1,55 +1,27 @@
 package com.rakesh.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Student {
   private int id;
   private String name;
-  
-  @Autowired
-  private Address address;
-  
+  private Address add;
   
 
-public int getId() {
-	return id;
+public Student() {
+	super();
+	// TODO Auto-generated constructor stub
 }
 
 
-
-public void setId(int id) {
+public Student(int id, String name, Address add) {
+	super();
 	this.id = id;
-}
-
-
-
-public String getName() {
-	return name;
-}
-
-
-
-public void setName(String name) {
 	this.name = name;
+	this.add = add;
 }
-
-
-
-public Address getAddress() {
-	return address;
-}
-
-
-
-public void setAddress(Address address) {
-	this.address = address;
-}
-
-
 
 @Override
 public String toString() {
-	return "Student [id=" + id + ", name=" + name + ", add=" + address + "]";
+	return "Student [id=" + id + ", name=" + name + ", add=" + add + "]";
 }
 
   
